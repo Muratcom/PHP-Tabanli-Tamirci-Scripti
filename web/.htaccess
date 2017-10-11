@@ -1,0 +1,6 @@
+RewriteEngine on
+ErrorDocument 404 http://tamirciscript.esy.es/404.php
+RewriteRule ^iletisim$ iletisim.php [NC,L] 
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L] 
+RewriteRule ^haber_detay/([0-9a-zA-_]+)/([0-9]+)$ haber_detay.php?sef=$1&haber_id=$2 [L,QSA]
+
